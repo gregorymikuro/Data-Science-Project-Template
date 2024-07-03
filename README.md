@@ -1,5 +1,3 @@
----
-
 ## Project Template for Data Science Projects
 
 This repository serves as a structured template for organizing data science projects effectively. It provides a clear framework for managing data, code, documentation, and results, ensuring reproducibility and maintainability.
@@ -17,5 +15,3 @@ This repository serves as a structured template for organizing data science proj
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
