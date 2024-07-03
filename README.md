@@ -10,8 +10,17 @@ This repository serves as a structured template for organizing data science proj
 
 - **Comprehensive Documentation**: Includes README.md files with project overview and setup instructions, along with documentation for reports, references, and licenses.
 
-- **Best Practices**: Emphasizes version control with Git, environment management with Conda or requirements.txt, and robust data handling practices.
+### Getting Started
+
+To use this project template, run the following command:
+
+```bash
+python newproject.py
+```
+
+This command will set up the project structure and generate necessary files.
 
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
