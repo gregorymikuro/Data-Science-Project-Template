@@ -1,5 +1,8 @@
 ## Project Template for Data Science Projects
 
+![image](https://github.com/gregorymikuro/Data-Science-Project-Template/assets/155205164/52c872fc-ba30-4db1-b42a-fc5c06895cde)
+
+
 This repository serves as a structured template for organizing data science projects effectively. It provides a clear framework for managing data, code, documentation, and results, ensuring reproducibility and maintainability.
 
 ### Key Features
