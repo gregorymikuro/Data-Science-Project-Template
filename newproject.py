@@ -37,7 +37,6 @@ This is a template for organizing data science projects. Below is a description 
 
 ## Folder Structure
 
-
     my-project/
     │
     ├── data/
@@ -188,6 +187,31 @@ This is a template for organizing data science projects. Below is a description 
 
     with open(os.path.join(base_path, "LICENSE"), "w", encoding="utf-8") as license_file:
         license_file.write(license_content.strip())
+
+    # Create initial files in respective folders
+    initial_files = {
+        "notebooks/001-overview/overview.ipynb": "",
+        "notebooks/002-preprocessing/preprocessing.ipynb": "",
+        "notebooks/003-exploratory/exploratory.ipynb": "",
+        "notebooks/004-modeling/modeling.ipynb": "",
+        "notebooks/005-evaluation/evaluation.ipynb": "",
+        "notebooks/006-final/final.ipynb": "",
+        "scripts/data/data_processing.py": "",
+        "scripts/features/feature_engineering.py": "",
+        "scripts/models/model_training.py": "",
+        "scripts/evaluation/evaluation.py": "",
+        "src/__init__.py": "",
+        "src/data_processing.py": "",
+        "src/feature_engineering.py": "",
+        "src/model_training.py": "",
+        "src/evaluation.py": "",
+        "environment.yml": "name: my_project\nchannels:\n  - defaults\ndependencies:\n  - python=3.8\n  - numpy\n  - pandas\n  - scikit-learn\n  - matplotlib\n  - seaborn",
+        ".gitignore": "*.pyc\n__pycache__/\nenv/\n",
+    }
+
+    for file_path, content in initial_files.items():
+        with open(os.path.join(base_path, file_path), "w", encoding="utf-8") as file:
+            file.write(content)
 
 # Usage
 if __name__ == "__main__":
