@@ -101,54 +101,81 @@ class ProjectStructure:
 
         ## Description of Each Folder
 
-        - **data/**:
-            - `raw/`: Contains the raw, untouched data files.
-            - `processed/`: Contains cleaned and processed data files ready for analysis.
-            - `external/`: Contains data from third-party sources.
+- **data/**:
+      
+    - `raw/`: Contains the raw, untouched data files.
+      
+    - `processed/`: Contains cleaned and processed data files ready for analysis.
+      
+    - `external/`: Contains data from third-party sources.
 
-        - **notebooks/**:
-            - `001-overview/`: Overview of data files present.
-            - `002-preprocessing/`: Notebooks for data cleaning and preprocessing.
-            - `003-exploratory/`: Notebooks for exploratory data analysis.
-            - `004-modeling/`: Notebooks for model development and experimentation.
-            - `005-evaluation/`: Notebooks for model evaluation.
-            - `006-final/`: Notebooks that are ready for presentation or sharing.
+- **notebooks/**:
 
-        - **scripts/**:
-            - `data/`: Scripts for data loading, cleaning, and transformation.
-            - `features/`: Scripts for feature engineering and selection.
-            - `models/`: Scripts for training different models.
-            - `evaluation/`: Scripts for evaluating model performance.
+    - `001-overview/`: Overview of data files present.
+      
+    - `002-preprocessing/`: Notebooks for data cleaning and preprocessing.
+      
+    - `003-exploratory/`: Notebooks for exploratory data analysis.
+      
+    - `004-modeling/`: Notebooks for model development and experimentation.
+      
+    - `005-evaluation/`: Notebooks for model evaluation.
+      
+    - `006-final/`: Notebooks that are ready for presentation or sharing.
 
-        - **results/**:
-            - `figures/`: Stores figures and plots generated during the analysis.
-            - `tables/`: Stores tables and summaries.
-            - `logs/`: Logs generated during model training and evaluation.
+- **scripts/**:
+      
+    - `data/`: Scripts for data loading, cleaning, and transformation.
+      
+    - `features/`: Scripts for feature engineering and selection.
+      
+    - `models/`: Scripts for training different models.
+      
+    - `evaluation/`: Scripts for evaluating model performance.
 
-        - **docs/**:
-            - `reports/`: Generated analysis reports.
-            - `references/`: Contains reference materials such as data dictionaries.
-            - `README.md`: Provides an overview of the project, including setup instructions and key findings.
+- **results/**:
+      
+    - `figures/`: Stores figures and plots generated during the analysis.
+      
+    - `tables/`: Stores tables and summaries.
+      
+    - `logs/`: Logs generated during model training and evaluation.
 
-        - **src/**:
-            - Source code for the project, including modules for data processing, feature engineering, model training, and evaluation.
+- **docs/**:
+      
+    - `reports/`: Generated analysis reports.
+      
+    - `references/`: Contains reference materials such as data dictionaries.
+      
+    - `README.md`: Provides an overview of the project, including setup instructions and key findings.
 
-        - **environment.yml** or **requirements.txt**:
-            - Contains the list of dependencies required to run the project.
+- **src/**:
+      
+    - Source code for the project, including modules for data processing, feature engineering, model training, and evaluation.
 
-        - **.gitignore**:
-            - Specifies files and directories to be ignored by version control (Git).
+- **environment.yml** or **requirements.txt**:
+      
+    - Contains the list of dependencies required to run the project.
 
-        ## Detailed Explanation of Best Practices
+- **.gitignore**:
+      
+    - Specifies files and directories to be ignored by version control (Git).
 
-        1. **Modularize Code**: Keep code modular and reusable by separating it into different scripts and notebooks. This helps in maintaining code quality and makes it easier to debug and update specific parts of the project.
-        2. **Document Thoroughly**: Include README files and documentation for clarity. Thorough documentation helps new team members or collaborators understand the project quickly.
-        3. **Use Version Control**: Use Git to track changes and collaborate effectively. Version control ensures that changes can be traced, reviewed, and reverted if necessary.
-        4. **Environment Management**: Use environment files (e.g., `environment.yml` or `requirements.txt`) to manage dependencies. This ensures that the project can be replicated easily on different machines or environments.
-        5. **Data Handling**: Keep raw data unchanged and separate from processed data. This ensures data integrity and makes it possible to reprocess data if needed.
+## Detailed Explanation of Best Practices
 
-        ## Happy Hacking !!!
-        """
+1. **Modularize Code**: Keep code modular and reusable by separating it into different scripts and notebooks. This helps in maintaining code quality and makes it easier to debug and update specific parts of the project.
+
+2. **Document Thoroughly**: Include README files and documentation for clarity. Thorough documentation helps new team members or collaborators understand the project quickly.
+
+3. **Use Version Control**: Use Git to track changes and collaborate effectively. Version control ensures that changes can be traced, reviewed, and reverted if necessary.
+
+4. **Environment Management**: Use environment files (e.g., `environment.yml` or `requirements.txt`) to manage dependencies. This ensures that the project can be replicated easily on different machines or environments.
+
+5. **Data Handling**: Keep raw data unchanged and separate from processed data. This ensures data integrity and makes it possible to reprocess data if needed.
+
+## Happy Hacking !!!
+    
+    """
 
         readme_path = os.path.join(self.base_path, "README.md")
         self.create_file(readme_path, readme_content.strip())
